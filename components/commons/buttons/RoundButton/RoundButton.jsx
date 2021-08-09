@@ -1,14 +1,16 @@
-import { Button, Link, Typography } from "@material-ui/core";
+import Link from "next/link";
+import { Button, Typography } from "@material-ui/core";
 import PropTypes from "prop-types";
 import { deburr } from "lodash";
-import { useStyles } from "../../styles/components/buttons/round-button.styles";
+import { useStyles } from "./round-button.styles";
+import clsx from "clsx";
 
-export const RoundButton = (props) => {
+const RoundButton = (props) => {
   const classes = useStyles();
   const path = deburr(props.path) === "inicio" ? "/" : "/" + deburr(props.path);
   return (
-    <Link href={path} passHref className={props.className}>
-      <Button {...props} className={classes.text}>
+    <Link href={path} passHref={true}>
+      <Button {...props} className={clsx(props.className, classes.text)}>
         <Typography variant="button" component="span">
           {props.children}
         </Typography>
@@ -19,6 +21,8 @@ export const RoundButton = (props) => {
 
 RoundButton.propTypes = {
   path: PropTypes.string,
-  className: PropTypes.object,
+  className: PropTypes.string,
   children: PropTypes.node
 };
+
+export default RoundButton;

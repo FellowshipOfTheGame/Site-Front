@@ -6,7 +6,7 @@ import "../styles/globals.css";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "../styles/theme";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../components/commons/Navbar/Navbar";
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {

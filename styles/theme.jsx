@@ -1,5 +1,12 @@
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
+export const navbarHeight = "96px";
+
+export const largePanelHeight = "800px";
+export const smDownLargePanelHeight = "360px";
+export const midPanelHeight = "600px";
+export const smMidPanelHeight = "280px";
+
 let theme = createMuiTheme({
   palette: {
     primary: {
@@ -10,12 +17,26 @@ let theme = createMuiTheme({
     },
     global: {
       white: "#FFF",
-      black: "#000"
+      black: "#000",
+      gray: "#707070",
+      darkGray: "#2b2b2b"
     }
   },
+  breakpoints: {
+    values: {
+      mobile: 420,
+      tablet: 1024,
+      notebook: 1366,
+      desktop: 1920
+    }
+  },
+  // Consider this variants for design system purposes only, not taking into account the semantic meaning from the tag names
   typography: {
+    allVariants: {
+      color: "#FFF"
+    },
     h1: {
-      fontSize: "4.125rem"
+      fontSize: "5rem"
     },
     h2: {
       fontSize: "3.31rem",
@@ -24,13 +45,13 @@ let theme = createMuiTheme({
     h3: {
       fontSize: "1.625rem"
     },
-    //Navigation Button variant
+    // Navigation Button variant
     h6: {
       fontSize: "1.75rem",
       fontWeight: "400"
     },
     subtitle1: {
-      fontSize: "1.375rem"
+      fontSize: "2.5rem"
     },
     button: {
       fontSize: "1.875rem",
@@ -58,6 +79,13 @@ let theme = createMuiTheme({
       gutters: {
         paddingLeft: 0,
         paddingRight: 0
+      }
+    },
+    MuiLink: {
+      underlineHover: {
+        "&:hover": {
+          textDecoration: "none"
+        }
       }
     }
   }
