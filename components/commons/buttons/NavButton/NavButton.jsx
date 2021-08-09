@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
-import { Button, Link, Typography } from "@material-ui/core";
 import PropTypes from "prop-types";
+import { Button, Link, Typography } from "@material-ui/core";
 import clsx from "clsx";
 import { deburr } from "lodash";
-import { useStyles } from "../../styles/components/buttons/nav-button.styles";
+import { useStyles } from "./nav-button.styles";
 
-export const NavButton = (props) => {
+const NavButton = (props) => {
   const router = useRouter();
   const classes = useStyles();
   const path = deburr(props.name) === "inicio" ? "/" : "/" + deburr(props.name);
@@ -26,3 +26,5 @@ export const NavButton = (props) => {
 NavButton.propTypes = {
   name: PropTypes.string.isRequired
 };
+
+export default NavButton;
