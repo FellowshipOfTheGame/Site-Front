@@ -4,7 +4,7 @@ import { navbarHeight } from "../../../styles/theme";
 export const usePageStyles = makeStyles((theme) => ({
   subtitle: {
     display: "none",
-    color: theme.palette.global.white,
+    color: theme.palette.colors.white,
     textAlign: "center",
     lineHeight: 1.2,
     [theme.breakpoints.up(theme.breakpoints.values.mobile)]: {
@@ -41,7 +41,7 @@ export const usePageStyles = makeStyles((theme) => ({
       }
     },
     "& h1": {
-      color: theme.palette.global.white,
+      color: theme.palette.colors.white,
       textAlign: "center"
     }
   },

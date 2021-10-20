@@ -14,7 +14,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   actionsHeading: {
     margin: "12px 0 0",
-    color: theme.palette.global.white,
+    color: theme.palette.colors.white,
     textAlign: "center"
   },
   roles: {

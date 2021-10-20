@@ -1,4 +1,4 @@
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
+import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 export const navbarHeight = "96px";
 
@@ -7,7 +7,7 @@ export const smDownLargePanelHeight = "360px";
 export const midPanelHeight = "600px";
 export const smMidPanelHeight = "280px";
 
-let theme = createMuiTheme({
+let theme = createTheme({
   palette: {
     primary: {
       main: "#1E2B50"
@@ -15,11 +15,15 @@ let theme = createMuiTheme({
     secondary: {
       main: "#324789"
     },
-    global: {
+    background: {
+      main: "#222222"
+    },
+    colors: {
       white: "#FFF",
       black: "#000",
       gray: "#707070",
-      darkGray: "#2b2b2b"
+      darkGray: "#2b2b2b",
+      bluishGray: "#2a3037"
     }
   },
   breakpoints: {
@@ -44,6 +48,9 @@ let theme = createMuiTheme({
     },
     h3: {
       fontSize: "1.625rem"
+    },
+    h4: {
+      fontSize: "1rem"
     },
     // Navigation Button variant
     h6: {

@@ -8,7 +8,7 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     padding: "16px 0px",
     backgroundColor: (props) =>
-      props.backgroundColor === "blue" ? theme.palette.primary.main : theme.palette.global.darkGray
+      props.backgroundColor === "blue" ? theme.palette.primary.main : theme.palette.colors.darkGray
   },
   header: {
     position: "relative",

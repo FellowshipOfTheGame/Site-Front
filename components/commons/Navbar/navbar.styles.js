@@ -28,8 +28,8 @@ export const useStyles = makeStyles((theme) => ({
   },
   mobileMenu: {
     "& ul": {
-      backgroundColor: theme.palette.global.darkGray,
-      border: `1px solid ${theme.palette.global.gray}`,
+      backgroundColor: theme.palette.colors.darkGray,
+      border: `1px solid ${theme.palette.colors.gray}`,
       borderRadius: "0px",
 
       "& li": {

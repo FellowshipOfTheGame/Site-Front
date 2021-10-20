@@ -4,14 +4,14 @@ export const useStyles = makeStyles((theme) => ({
   root: {
     width: "300px",
     height: "300px",
-    border: `3px solid ${theme.palette.global.black}`,
+    border: `3px solid ${theme.palette.colors.black}`,
 
     "&:hover": {
       transform: "scale(1.02)"
     }
   },
   rounded: {
-    border: `1px solid ${theme.palette.global.gray}`,
+    border: `1px solid ${theme.palette.colors.gray}`,
     borderRadius: "30px"
   },
   media: {
@@ -21,10 +21,10 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "#354a5f",
     height: "120px",
     padding: "12px",
-    borderTop: `3px solid ${theme.palette.global.black}`
+    borderTop: `3px solid ${theme.palette.colors.black}`
   },
   roundedTopBorder: {
-    borderTop: `1px solid ${theme.palette.global.gray}`
+    borderTop: `1px solid ${theme.palette.colors.gray}`
   },
   title: {
     display: "block",

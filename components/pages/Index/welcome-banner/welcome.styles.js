@@ -12,7 +12,7 @@ export const useStyles = makeStyles((theme) => ({
 
     "& h1": {
       fontWeight: "400",
-      color: theme.palette.global.white,
+      color: theme.palette.colors.white,
       textAlign: "center"
     },
 
@@ -36,11 +36,11 @@ export const useStyles = makeStyles((theme) => ({
   },
   welcomeBorder: {
     display: "none",
-    backgroundColor: theme.palette.global.white,
+    backgroundColor: theme.palette.colors.white,
     height: "8px",
     width: "110%",
     margin: "12px",
-    border: `1px solid ${theme.palette.global.black}`,
+    border: `1px solid ${theme.palette.colors.black}`,
     [theme.breakpoints.up(theme.breakpoints.values.mobile)]: {
       display: "block"
     }
